@@ -1,0 +1,31 @@
+1. What are the key assumptions underlying linear regression?
+Linear regression relies on several fundamental assumptions for valid results:
+
+Linearity: The relationship between predictors and the outcome should be linear.
+Independence: Observations must be independent, with no correlation among residuals.
+Homoscedasticity: The variance of errors should remain constant across all levels of the independent variables.
+Normality of errors: Residuals should be normally distributed.
+
+2. In which scenarios is logistic regression preferred over linear regression?
+Logistic regression is ideal when:
+
+The target variable is categorical, not continuous.
+The task involves classification into discrete groups.
+The relationship between predictors and the outcome is non-linear, following a sigmoid curve.
+
+3. How should you interpret coefficients in logistic regression?
+In logistic regression:
+Coefficients indicate the change in log-odds of the outcome for a one-unit increase in a predictor, holding others constant.
+Positive values increase the likelihood of the positive class; negative values decrease it.
+The effect is non-linear due to the sigmoid transformation, and depends on the values of all predictors.
+
+4. What distinguishes the sigmoid function from the softmax function?
+Sigmoid: Used for binary classification, it maps inputs to probabilities between 0 and 1.
+Softmax: Used for multiclass classification, it transforms a vector of values into a probability distribution summing to 1.
+Application: Sigmoid is for two-class problems; softmax is for problems with more than two categories.
+
+5. Why is R-squared not an appropriate metric for logistic regression?
+R-squared measures explained variance in continuous outcomes, but logistic regression predicts categorical outcomes.
+Logistic regression outputs probabilities, not continuous values, making R-squared calculations unsuitable.
+The concept of "variance explained" does not translate meaningfully to classification tasks.
+Let me know if you want these changes applied to your file.
